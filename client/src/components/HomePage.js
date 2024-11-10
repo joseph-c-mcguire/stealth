@@ -20,7 +20,7 @@ const HomePage = () => {
                 <h2>About Us</h2>
                 <div className="history">
                     <h3>Our History</h3>
-                    <p>Founded in 2024, Consulting Business has been providing top-notch consulting services for over two decades.</p>
+                    <p>Founded in 2004, Consulting Business has been providing top-notch consulting services for over two decades.</p>
                 </div>
                 <div className="mission-vision">
                     <h3>Our Mission</h3>

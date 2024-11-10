@@ -32,6 +32,18 @@ const ShopPage = () => {
                             <a href="#">Share on Instagram</a>
                         </div>
                     </div>
+                    <div className="product">
+                        <img src="images/product3.jpg" alt="Product 3" />
+                        <h3>Product 3</h3>
+                        <p>$100.00</p>
+                        <button>Add to Cart</button>
+                        <div className="social-sharing">
+                            <a href="#">Share on Facebook</a>
+                            <a href="#">Share on Twitter</a>
+                            <a href="#">Share on LinkedIn</a>
+                            <a href="#">Share on Instagram</a>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section id="newsletter">
