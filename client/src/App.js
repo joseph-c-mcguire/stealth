@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import ShopPage from "./components/ShopPage";
 import ServicePage from "./components/ServicePage";
@@ -13,12 +13,12 @@ function App() {
       <div className="App">
         <nav>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/shop">Shop</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/search">Search</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/blog">Blog</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/shop">Shop</Link></li>
+            <li><Link to="/services">Services</Link></li>
+            <li><Link to="/search">Search</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/blog">Blog</Link></li>
           </ul>
         </nav>
         <Switch>
@@ -28,6 +28,7 @@ function App() {
           <Route exact path="/search" component={SearchPage} />
           <Route exact path="/contact" component={ContactPage} />
           <Route exact path="/blog" component={BlogPage} />
+          <Route path="*" component={HomePage} /> {/* Wildcard route */}
         </Switch>
       </div>
     </Router>
