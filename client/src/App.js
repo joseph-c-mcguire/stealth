@@ -6,11 +6,15 @@ import ServicePage from "./components/ServicePage";
 import SearchPage from "./components/SearchPage";
 import ContactPage from "./components/ContactPage";
 import BlogPage from "./components/BlogPage";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import './index.css'; // Import global styles
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <Header />
         <nav>
           <ul>
             <li><Link to="/">Home</Link></li>
@@ -30,6 +34,7 @@ function App() {
           <Route exact path="/blog" component={BlogPage} />
           <Route path="*" component={HomePage} /> {/* Wildcard route */}
         </Switch>
+        <Footer />
       </div>
     </Router>
   );

@@ -3,8 +3,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #f4f4f9;
+    background-color: #F5F5F5; /* Light Gray Background */
+    color: #2C3E50; /* Dark Blue-Gray Text */
+    padding-top: 4rem; /* Add padding to ensure header does not overlap with navigation */
 }
 
 header, footer {
@@ -15,10 +16,12 @@ header, footer {
 }
 
 header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    background-color: #34495E; /* Dark Blue-Gray */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative; /* Ensure header does not overlap with other elements */
+    z-index: 1001; /* Ensure header is above other elements */
 }
 
 header nav ul {
@@ -46,7 +49,8 @@ header nav ul li a:hover {
 }
 
 main {
-    padding: 6em 1em 1em; /* Adjusted padding to give space to the main body */
+    padding: 1rem;
+    padding-bottom: 3rem; /* Ensure main content doesn't hide behind the footer */
 }
 
 h1, h2, h3, h4 {
@@ -116,9 +120,105 @@ a:hover {
 }
 
 footer {
-    margin-top: 2em;
-    padding: 1em 0;
-    background-color: #222;
+    background-color: #34495E; /* Dark Blue-Gray */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+}
+
+nav {
+    margin-top: 1rem; /* Add margin to prevent overlap with header */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #2C3E50; /* Dark Blue-Gray */
+    flex-wrap: wrap;
+    margin: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for a sleek look */
+}
+
+nav ul li {
+    margin: 0.5rem;
+}
+
+nav ul li a {
+    color: #E74C3C; /* Red */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    background-color: #E74C3C; /* Red */
+    color: white;
+    border-radius: 4px; /* Rounded corners */
+}
+
+button {
+    background-color: #E74C3C; /* Red */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #C0392B; /* Darker Red */
+}
+
+.alert {
+    background-color: #C0392B; /* Darker Red */
+    color: white;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    header, footer {
+        padding: 0.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+
+.hero {
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+    background: url('images/logo.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
     text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem; /* Adjust the font size as needed */
+    margin: 0;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.banner {
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    background: url('images/banner-image.jpg') no-repeat center center;
+    background-size: cover;
+    margin-bottom: 1rem; /* Space between banner and navigation bar */
 }

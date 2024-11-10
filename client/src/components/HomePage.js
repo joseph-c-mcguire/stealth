@@ -3,6 +3,9 @@ import React from 'react';
 const HomePage = () => {
     return (
         <main>
+            <section className="hero">
+                <h1>Transforming Data into Insights</h1>
+            </section>
             <section id="introduction">
                 <h1>Welcome to Our Consulting Services</h1>
                 <p>We specialize in providing top-notch services in machine learning, software development, and technical writing. Our team of experts is dedicated to helping your business thrive in the digital age.</p>
