@@ -23,11 +23,11 @@ function App() {
         </nav>
         <Switch>
           <Route exact path="/" component={HomePage} />
-          <Route path="/shop" component={ShopPage} />
-          <Route path="/services" component={ServicePage} />
-          <Route path="/search" component={SearchPage} />
-          <Route path="/contact" component={ContactPage} />
-          <Route path="/blog" component={BlogPage} />
+          <Route exact path="/shop" component={ShopPage} />
+          <Route exact path="/services" component={ServicePage} />
+          <Route exact path="/search" component={SearchPage} />
+          <Route exact path="/contact" component={ContactPage} />
+          <Route exact path="/blog" component={BlogPage} />
         </Switch>
       </div>
     </Router>
