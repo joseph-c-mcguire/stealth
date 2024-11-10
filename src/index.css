@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+}
+
+header, footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #444;
+}
+
+main {
+    padding: 6em 1em 1em; /* Adjusted padding to give space to the main body */
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 1em;
+    width: calc(33.333% - 2em);
+    box-sizing: border-box;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.social-sharing a {
+    display: inline-block;
+    margin-right: 0.5em;
+    color: #007BFF;
+}
+
+#newsletter {
+    margin-top: 2em;
+}
+
+#newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+#newsletter-form input[type="email"] {
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#newsletter-form button {
+    padding: 0.5em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#newsletter-form button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    margin-top: 2em;
+    padding: 1em 0;
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
