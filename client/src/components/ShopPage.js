@@ -14,10 +14,10 @@ const ShopPage = () => {
                         <p>$50.00</p>
                         <button>Add to Cart</button>
                         <div className="social-sharing">
-                            <a href="#">Share on Facebook</a>
-                            <a href="#">Share on Twitter</a>
-                            <a href="#">Share on LinkedIn</a>
-                            <a href="#">Share on Instagram</a>
+                            <a href="/product1">Share on Facebook</a>
+                            <a href="/product1">Share on Twitter</a>
+                            <a href="/product1">Share on LinkedIn</a>
+                            <a href="/product1">Share on Instagram</a>
                         </div>
                     </div>
                     <div className="product">
@@ -26,10 +26,10 @@ const ShopPage = () => {
                         <p>$75.00</p>
                         <button>Add to Cart</button>
                         <div className="social-sharing">
-                            <a href="#">Share on Facebook</a>
-                            <a href="#">Share on Twitter</a>
-                            <a href="#">Share on LinkedIn</a>
-                            <a href="#">Share on Instagram</a>
+                            <a href="/product2">Share on Facebook</a>
+                            <a href="/product2">Share on Twitter</a>
+                            <a href="/product2">Share on LinkedIn</a>
+                            <a href="/product2">Share on Instagram</a>
                         </div>
                     </div>
                     <div className="product">
@@ -38,10 +38,10 @@ const ShopPage = () => {
                         <p>$100.00</p>
                         <button>Add to Cart</button>
                         <div className="social-sharing">
-                            <a href="#">Share on Facebook</a>
-                            <a href="#">Share on Twitter</a>
-                            <a href="#">Share on LinkedIn</a>
-                            <a href="#">Share on Instagram</a>
+                            <a href="/product3">Share on Facebook</a>
+                            <a href="/product3">Share on Twitter</a>
+                            <a href="/product3">Share on LinkedIn</a>
+                            <a href="/product3">Share on Instagram</a>
                         </div>
                     </div>
                 </div>
