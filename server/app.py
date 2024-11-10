@@ -8,6 +8,7 @@ app = Flask(__name__, static_folder='../client/build', static_url_path='')
 def serve_react_app():
     return send_from_directory(os.path.join(app.static_folder, 'index.html'))
 
+
 # API routes
 @app.route('/api', methods=['GET'])
 def api_example():
@@ -15,3 +16,4 @@ def api_example():
 
 if __name__ == "__main__":
     app = Flask(__name__, static_folder='../client/build', static_url_path='')
+    app.run(debug=True, host='0.0.0.0', port=int(os.environ.get("PORT", 5000)))
