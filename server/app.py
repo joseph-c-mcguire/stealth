@@ -16,7 +16,7 @@ def api_example():
     return {'message': 'Hello from Flask API'}
 
 # Serve React static files
-@app.route('/<path:path>')
+@app.route('/<path:path>', methods=['GET'])
 def serve_static_files(path):
     if path.startswith('api'):
         return jsonify({"error": "API route not found"}), 404
