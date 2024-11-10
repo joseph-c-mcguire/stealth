@@ -8,6 +8,8 @@ app = Flask(__name__, static_folder='../client/build', static_url_path='')
 def serve_react_app(path):
     if path and path.startswith('api'):
         return jsonify({"error": "API route not found"}), 404
+    if path and os.path.exists(os.path.join(app.static_folder, path)):
+        return send_from_directory(app.static_folder, path)
     try:
         return send_from_directory(app.static_folder, 'index.html')
     except Exception as e:
