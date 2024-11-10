@@ -3,6 +3,10 @@ import React from 'react';
 const HomePage = () => {
     return (
         <main>
+            <section id="introduction">
+                <h1>Welcome to Our Consulting Services</h1>
+                <p>We specialize in providing top-notch services in machine learning, software development, and technical writing. Our team of experts is dedicated to helping your business thrive in the digital age.</p>
+            </section>
             <section id="services">
                 <h2>Our Services</h2>
                 <p>We offer a wide range of consulting services to help your business grow.</p>
@@ -33,12 +37,12 @@ const HomePage = () => {
                     </div>
                     <div className="team-member">
                         <img src="images/travis-kessler.jpg" alt="Dr. Travis Kessler, co-Founder" />
-                        <h4>Dr. Travis Kessler</h4>
+                        <h4>Travis Kessler, Ph.D.</h4>
                         <p>co-Founder</p>
                     </div>
                     <div className="team-member">
                         <img src="images/lucas-domulevicz.jpg" alt="Dr. Lucas Domulevicz, co-Founder" />
-                        <h4>Dr. Lucas Domulevicz</h4>
+                        <h4>Lucas Domulevicz, Ph.D.</h4>
                         <p>co-Founder</p>
                     </div>
                 </div>

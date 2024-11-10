@@ -19,6 +19,16 @@ def services():
     return render_template('services.html')
 
 
+@app.route('/portfolio')
+def portfolio():
+    return render_template('portfolio.html')
+
+
+@app.route('/blog')
+def blog():
+    return render_template('blog.html')
+
+
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
