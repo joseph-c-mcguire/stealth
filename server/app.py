@@ -3,9 +3,9 @@ from flask import Flask, send_from_directory, jsonify
 
 app = Flask(__name__, static_folder='../client/build', static_url_path='')
 
-@app.route('/')
+@app.route('/', defaults={'path': ''})
 @app.route('/<path:path>', methods=['GET'])
-def serve_react_app(path=''):
+def serve_react_app(path):
     if path and path.startswith('api'):
         return jsonify({"error": "API route not found"}), 404
     try:
