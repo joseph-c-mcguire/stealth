@@ -1,2 +1,1 @@
-web: python server/app.py
-client: npm run build --prefix client
+web: npm --prefix client run build && npm --prefix server start
