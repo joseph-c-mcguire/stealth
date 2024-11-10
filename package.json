@@ -2,6 +2,7 @@
   "name": "stealth",
   "version": "1.0.0",
   "scripts": {
-    "heroku-postbuild": "npm --prefix client install && npm --prefix client run build && npm --prefix server install"
+    "heroku-postbuild": "npm --prefix client install && npm --prefix client run build && npm --prefix server install",
+    "start": "python server/app.py"
   }
 }
