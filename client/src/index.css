@@ -81,7 +81,7 @@ header {
 .banner {
     width: 100%; /* Full screen width */
     height: 400px; /* Adjust the height as needed */
-    background: url('../images/banner-image.jpg') no-repeat center center; /* Ensure the correct path */
+    background: url('./images/banner-image.jpg') no-repeat center center; /* Ensure the correct path */
     background-size: cover;
     background-color: #34495E; /* Fallback background color */
     margin: 0; /* Remove space between banner and top of the page */
