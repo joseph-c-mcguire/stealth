@@ -5,6 +5,7 @@ import travisKessler from '../images/travis-kessler.jpg';
 import lucasDomulevicz from '../images/lucas-domulevicz.jpg';
 import heroImage from '../images/hero-image.jpg';
 import logo from '../images/logo.jpg';
+import '../styles/App.css'; // Import component-specific styles
 
 const HomePage = () => {
     return (
@@ -13,10 +14,10 @@ const HomePage = () => {
                 <h1>Welcome to Our Consulting Services</h1>
                 <p>We specialize in providing top-notch services in machine learning, software development, and technical writing. Our team of experts is dedicated to helping your business thrive in the digital age.</p>
             </section>
-            <section className="gradient-section">
+            {/* <section className="gradient-section">
                 <h2>Our Services</h2>
                 <p>Explore the wide range of services we offer.</p>
-            </section>
+            </section> */}
             <section className="image-overlay-section">
                 <div className="image-overlay">
                     <img src={logo} alt="Service" />
@@ -46,25 +47,24 @@ const HomePage = () => {
                     <p>To be the leading consulting firm recognized for our innovative solutions and exceptional client service.</p>
                 </div>
                 <div className="team">
-                    <h3>Meet Our Team</h3>
-                    <div className="headshots">
-                        <div className="team-member">
-                            <img src={josephMcguire} alt="Joseph McGuire, co-Founder" className="headshot" />
-                            <h4>Joseph McGuire, M.S.</h4>
-                            <p>co-Founder</p>
-                            <p>Joseph McGuire - CEO</p>
-                        </div>
-                        <div className="team-member">
-                            <img src={travisKessler} alt="Dr. Travis Kessler, co-Founder" className="headshot" />
-                            <h4>Travis Kessler, Ph.D.</h4>
-                            <p>co-Founder</p>
-                            <p>Travis Kessler - CTO</p>
-                        </div>
-                        <div className="team-member">
-                            <img src={lucasDomulevicz} alt="Dr. Lucas Domulevicz, co-Founder" className="headshot" />
-                            <h4>Lucas Domulevicz, Ph.D.</h4>
-                            <p>co-Founder</p>
-                            <p>Lucas Domulevicz - CFO</p>
+                    <div className="team-banner">
+                        <h3>Meet Our Team</h3>
+                        <div className="headshots">
+                            <div className="team-member">
+                                <img src={josephMcguire} alt="Joseph McGuire, co-Founder" className="headshot" />
+                                <h4>Joseph McGuire, M.S.</h4>
+                                <p>co-Founder</p>
+                            </div>
+                            <div className="team-member">
+                                <img src={travisKessler} alt="Dr. Travis Kessler, co-Founder" className="headshot" />
+                                <h4>Travis Kessler, Ph.D.</h4>
+                                <p>co-Founder</p>
+                            </div>
+                            <div className="team-member">
+                                <img src={lucasDomulevicz} alt="Dr. Lucas Domulevicz, co-Founder" className="headshot" />
+                                <h4>Lucas Domulevicz, Ph.D.</h4>
+                                <p>co-Founder</p>
+                            </div>
                         </div>
                     </div>
                 </div>
