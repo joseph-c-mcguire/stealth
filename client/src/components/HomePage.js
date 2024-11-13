@@ -1,7 +1,5 @@
 import React from 'react';
 import josephMcguire from '../images/joseph-mcguire.jpg';
-import travisKessler from '../images/travis-kessler.jpg';
-import lucasDomulevicz from '../images/lucas-domulevicz.jpg';
 import '../styles/App.css'; // Import component-specific styles
 
 const HomePage = () => {
@@ -52,23 +50,6 @@ const HomePage = () => {
                                 <p>
                                 Seasoned Data Science professional with over 5 years of experience and a Master’s in Applied Mathematics from Cal Poly, San Luis Obispo, with expertise in machine learning, DevOps/MLOps, web app development, and technical writing.
                                 </p>
-                            </div>
-                            <div className="team-member">
-                                <img src={travisKessler} alt="Dr. Travis Kessler, co-Founder" className="headshot" />
-                                <h4>Travis Kessler, Ph.D.</h4>
-                                <p>co-Founder</p>
-                                <p>
-                                PhD in Computer Engineering from UMass Lowell with over 9 years of experience in machine learning, data science, and software engineering, specializing in predictive models, algorithm optimization, and data pipelines.
-                                </p>
-                            </div>
-                            <div className="team-member">
-                                <img src={lucasDomulevicz} alt="Dr. Lucas Domulevicz, co-Founder" className="headshot" />
-                                <h4>Lucas Domulevicz, Ph.D.</h4>
-                                <p>co-Founder</p>
-                                <p>
-                                    PhD in Electrical and Computer Engineering from UC Davis with over 8 years of experience in machine learning, deep learning, and high-dimensional data analysis for applications in nanoelectronics and spectroscopic signal classification. 
-                                </p>
-
                             </div>
                         </div>
                     </div>
