@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import AboutPage from "./components/AboutPage";
 import ServicesPage from "./components/ServicesPage";
@@ -10,6 +10,14 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 // import './index.css'; // Import global styles
 import './styles/App.css'; // Import component-specific styles
+import './styles/Header.css';
+import './styles/HomePage.css';
+import './styles/Footer.css';
+import './styles/ContactPage.css';
+import './styles/BlogPage.css';
+import './styles/AboutPage.css';
+import './styles/PortfolioPage.css';
+import './styles/ServicesPage.css';
 
 // Import the image
 import logo from './images/logo.jpg';
@@ -19,16 +27,6 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        {/* <nav>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/services">Services</Link></li>
-            <li><Link to="/portfolio">Portfolio</Link></li>
-            <li><Link to="/blog">Blog</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-          </ul>
-        </nav> */}
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/about" component={AboutPage} />

@@ -1,22 +1,22 @@
 /* General Styles */
 body {
-    background: grey; /* Gradient background */
+    background: linear-gradient(to right, #3a6073, #16222a); /* Blue-grey gradient background */
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #ffffff; /* Dark Blue-Gray Text */
-    padding-top: 0; /* Remove top padding to eliminate space above header */
-    line-height: 1.6; /* Improve readability */
-    letter-spacing: 0.5px; /* Improve readability */
+    color: #ffffff;
+    padding-top: 0;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif;
-    color: #ffffff; /* Dark Blue-Gray Text */
+    color: #ffffff;
     margin: 1rem 0;
-    margin-top: 1.5rem; /* Add more space above headings */
-    margin-bottom: 1rem; /* Add more space below headings */
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 h1 {
@@ -54,381 +54,53 @@ p {
     font-size: 1rem;
     line-height: 1.6;
     margin: 1rem 0;
-    margin-bottom: 1.5rem; /* Add more space below paragraphs */
+    margin-bottom: 1.5rem;
 }
 
 /* Links */
 a {
-    color: #007BFF;
+    color: #1abc9c; /* Light blue color for links */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #0056b3;
+    color: #16a085; /* Darker blue color on hover */
     text-decoration: underline;
 }
 
-header {
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    position: relative; /* Ensure header does not overlap with other elements */
-    z-index: 1001; /* Ensure header is above other elements */
-}
-
-.banner {
-    width: 100%; /* Full screen width */
-    height: 400px; /* Adjust the height as needed */
-    background: url('../images/banner-image.jpg') no-repeat center center; /* Ensure the correct path */
-    background-size: cover;
-    margin: 0; /* Remove space between banner and top of the page */
-}
-
-footer {
-    background-color: #34495E; /* Dark Blue-Gray */
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    z-index: 1000;
-    margin: 10; 
-}
-
-.header-top {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    color: white;
-}
-
-.header-top .logo img {
-    height: 50px; /* Adjust the height as needed */
-    width: auto;
-}
-
-.header-top .company-info {
-    margin-left: 1rem;
-}
-
-.header-top .company-info h1 {
-    margin: 0;
-    font-size: 1.5rem;
-}
-
-.header-top .company-info p {
-    margin: 0;
-    font-size: 1rem;
-}
-
-nav {
-    display: flex;
-    justify-content: flex-start; /* Align items to the start to position search bar on the left */
-    align-items: center;
-    padding: 0.5rem 2rem; /* Adjusted padding for better spacing */
-    flex-wrap: nowrap;
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    gap: 1rem;
-    flex: 1 1 auto; /* Allow the menu to take available space */
-}
-
-nav ul li {
-    margin: 0;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px; /* Rounded corners for modern style */
-    /* transition: background-color 0.3s, transform 0.3s; Smooth transitions */
-}
-
-nav ul li a:hover {
-    transform: scale(1.05); /* Slight enlargement on hover */
-}
-
-.search-bar {
-    display: flex;
-    order: -1; /* Position the search bar before the navigation links */
-    background-color: #ffffff; /* White background for contrast */
-    border-radius: 4px; /* Rounded corners */
-    overflow: hidden; /* Prevent overflow */
-}
-
-.search-bar:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
-}
-
-.search-bar input {
-    border: none;
-    flex: 1;
-    outline: none;
-    font-size: 1rem;
-}
-
-.search-bar button {
-    background-color: rgba(0, 0, 0, 0.0);
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    /* width: 2.5rem; Set a square button */
-    /* height: 100%; Match the height of the search bar */
-    transition: background-color 0.3s;
-    display: flex;
-}
-
-.search-bar button:hover {
-    background-color: #34495E; /* Subtle hover background */
-    transform: scale(1.05); /* Slight enlargement on hover */
-}
-
-.hero {
-    position: relative;
-    text-align: center;
-    color: white;
-    /* background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); Gradient background */
-    padding: 4rem 0;
-}
-
-.hero-image {
-    width: 100%;
-    height: auto;
-    opacity: 0.5; /* Semi-transparent image */
-}
-
-.hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-}
-
-.cta-button {
-    /* background: linear-gradient(135deg, #ff6a00 0%, #ee0979 100%); Gradient button */
-    color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    cursor: pointer;
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: 1rem;
-    transition: background-color 0.3s, transform 0.3s;
-    margin-top: 1rem; /* Add space above buttons */
-}
-
-.cta-button:hover {
-    /* background: linear-gradient(135deg, #ee0979 0%, #ff6a00 100%); */
-    transform: scale(1.05);
-}
-
-.gradient-section {
-    width: 100vw; /* Full screen width */
-    margin-left: calc(50% - 50vw); /* Center align */
-    /* background: linear-gradient(135deg, #ff6a00 0%, #ee0979 100%); */
-    color: white;
-    padding: 2rem;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.image-overlay-section {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin: 2rem 0;
-}
-
-.image-overlay {
-    position: relative;
-    width: 300px; /* Adjust the width as needed */
-    height: 200px; /* Adjust the height as needed */
-    overflow: hidden;
-    border-radius: 8px; /* Rounded corners */
-}
-
-.image-overlay img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s;
-}
-
-.image-overlay:hover img {
-    transform: scale(1.1); /* Slightly enlarge the image on hover */
-}
-
-.overlay-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background: linear-gradient(135deg, rgba(106, 17, 203, 0.8) 0%, rgba(37, 117, 252, 0.8) 100%); Gradient overlay */
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.image-overlay:hover .overlay-content {
-    opacity: 1; /* Show overlay content on hover */
-}
-
-main {
-    padding: 1rem;
-    padding-bottom: 3rem; /* Ensure main content doesn't hide behind the footer */
-    max-width: 1200px; /* Limit the width of the main content */
-    margin: 0 auto; /* Center the main content */
-    padding: 2rem; /* Add padding around the main content */
-}
-
 button {
-    background-color: #E74C3C; /* Red */
+    background-color: #1abc9c; /* Light blue color for buttons */
     color: white;
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 1rem;
-    transition: transform 0.3s;
-    margin-top: 1rem; /* Add space above buttons */
+    transition: transform 0.3s, background-color 0.3s;
+    margin-top: 1rem;
 }
 
 button:hover {
-    background-color: #C0392B; /* Darker Red */
+    background-color: #16a085; /* Darker blue color on hover */
     transform: scale(1.05);
 }
 
 .alert {
-    background-color: #C0392B; /* Darker Red */
+    background-color: #c0392b; /* Red color for alerts */
     color: white;
     padding: 1rem;
     margin: 1rem 0;
     animation: fadeIn 0.5s ease-in-out;
 }
 
-@media (max-width: 768px) {
-    header, footer {
-        background-color: #34495E; /* Dark Blue-Gray */
-        padding: 1rem;
-    }
-
-    nav ul {
-        background-color: #34495E; /* Dark Blue-Gray */
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 0.5rem 0;
-    }
-
-    .search-bar {
-        width: 100%; /* Make search bar full width on smaller screens */
-        margin-top: 0rem;
-    }
-
-    .search-bar input {
-        width: 80%; /* Adjust input width */
-    }
-
-    .search-bar button {
-        width: 20%; /* Adjust button width */
-    }
-}
-
-.hero {
-    width: 100%;
-    height: 375px; /* Adjust the height as needed */
-    /* background: url('../images/logo.jpg') no-repeat center center; */
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-    animation: fadeIn 1s ease-in-out;
-}
-
-.hero h1 {
-    font-size: 3rem; /* Adjust the font size as needed */
-    margin: 0;
-    padding: 10rem;
-    color: rgba(0, 0, 0, 1); /* Semi-transparent text color */
-    background-color: rgba(255, 255, 255, 0); /*Semi-transparent background*/
-    border-radius: 8px; /* Rounded corners */
-    animation: slideIn 3s ease-in-out;
-}
-
-@media (max-width: 1024px) {
-    .hero h1 {
-        font-size: 2.5rem; /* Adjust font size for tablets */
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 0.5rem 0;
-    }
-}
-
-@media (max-width: 768px) {
-    header, footer {
-        padding: 0.5rem;
-    }
-
-    .hero {
-        height: 300px; /* Adjust height for mobile devices */
-    }
-
-    .hero h1 {
-        font-size: 2rem; /* Adjust font size for mobile devices */
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 0.5rem 0;
-    }
-
-    main {
-        padding: 0.5rem;
-    }
-
-    button {
-        padding: 0.5rem;
-        font-size: 0.875rem; /* Adjust font size for mobile devices */
-    }
-}
-
-@media (max-width: 480px) {
-    .hero {
-        height: 200px; /* Adjust height for smaller mobile devices */
-    }
-
-    .hero h1 {
-        font-size: 1.5rem; /* Adjust font size for smaller mobile devices */
-    }
-
-    nav ul li a {
-        padding: 0.5rem; /* Adjust padding for smaller mobile devices */
-    }
+main {
+    padding: 1rem;
+    padding-bottom: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: calc(100vh - 200px); /* Adjust height to account for header and footer */
 }
 
 /* Animations */
@@ -450,42 +122,4 @@ button:hover {
         transform: translateY(0);
         opacity: 1;
     }
-}
-
-.headshots {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin: 2rem 0;
-}
-
-.headshot {
-    width: 150px; /* Adjust the width as needed */
-    height: auto;
-    border-radius: 50%; /* Make the images circular */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    transition: transform 0.3s;
-}
-
-.headshot:hover {
-    transform: scale(1.1); /* Slightly enlarge the image on hover */
-}
-
-.team-banner {
-    /* background-color: linear-gradient(135deg, #713da8 0%, #2575fc 100%); Dark Blue-Gray */
-    color: white;
-    padding: 2rem;
-    padding-block: 2rem;
-    text-align: center;
-}
-
-.team-member {
-    text-align: center;
-    flex: 1; /* Ensure team members are displayed horizontally */
-}
-
-.team-member p {
-    margin-top: 0.5rem;
-    font-size: 1rem;
-    color: #ffffff; /* Light Gray Text */
 }

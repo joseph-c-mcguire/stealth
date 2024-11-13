@@ -1,0 +1,234 @@
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 4rem 0;
+    background: linear-gradient(to right, #3a6073, #16222a); /* Blue-grey gradient background */
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.cta-button {
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 1rem;
+    background-color: #1abc9c; /* Light blue color for buttons */
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    background-color: #16a085; /* Darker blue color on hover */
+}
+
+.gradient-section {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    background: linear-gradient(to right, #3a6073, #16222a); /* Blue-grey gradient background */
+}
+
+.image-overlay-section {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.image-overlay {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.image-overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.image-overlay:hover img {
+    transform: scale(1.1);
+}
+
+.overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image-overlay:hover .overlay-content {
+    opacity: 1;
+}
+
+.headshots {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.headshot {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.headshot:hover {
+    transform: scale(1.1);
+}
+
+.team-banner {
+    color: white;
+    padding: 2rem;
+    padding-block: 2rem;
+    text-align: center;
+}
+
+.team-member {
+    text-align: center;
+    flex: 1;
+}
+
+.team-member p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.card {
+    background-color: #34495E;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.about-us-container, .contact-us-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.about-us-card, .contact-us-card {
+    background-color: #34495E;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.about-us-card:hover, .contact-us-card:hover {
+    transform: scale(1.05);
+}
+
+.about-us-card h3, .contact-us-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-us-card p, .contact-us-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 0.5rem;
+    }
+
+    button {
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 200px;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li a {
+        padding: 0.5rem;
+    }
+}
+
+main {
+    padding-bottom: 5rem; /* Add padding to the bottom to prevent content from being cut off by the footer */
+}

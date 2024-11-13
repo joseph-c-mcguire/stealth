@@ -1,0 +1,13 @@
+
+.about-section {
+    padding: 2rem;
+    background-color: #34495E;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1,
+.about-section p {
+    margin: 0 0 1rem 0;
+}

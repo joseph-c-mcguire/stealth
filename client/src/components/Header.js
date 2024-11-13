@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../images/logo.jpg';
-import '../styles/App.css'; // Import component-specific styles
+import '../styles/Header.css'; // Import component-specific styles
 
 const Header = () => {
   const handleSearch = (event) => {
@@ -29,11 +29,13 @@ const Header = () => {
           <li><Link to="/portfolio">Portfolio</Link></li>
           <li><Link to="/blog">Blog</Link></li>
           <li><Link to="/contact">Contact</Link></li>
+          <li>
+            <form className="search-bar" onSubmit={handleSearch}>
+              <input type="text" name="search" placeholder="Search..." />
+              <button type="submit">🔍</button> 
+            </form>
+          </li>
         </ul>
-        <form className="search-bar" onSubmit={handleSearch}>
-          <button type="submit">🔍</button> 
-          <input type="text" name="search" placeholder="Test..." />
-        </form>
       </nav>
     </header>
   );

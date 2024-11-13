@@ -1,0 +1,13 @@
+
+.services-section {
+    padding: 2rem;
+    background-color: #34495E;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.services-section h1,
+.services-section p {
+    margin: 0 0 1rem 0;
+}

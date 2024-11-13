@@ -1,0 +1,17 @@
+footer {
+    background: linear-gradient(to right, #3a6073, #16222a); /* Blue-grey gradient background */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+    margin: 0; /* Ensure no margin to prevent shifting */
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 0.5rem;
+    }
+}
